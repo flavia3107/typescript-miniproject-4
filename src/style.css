@@ -27,6 +27,7 @@ body {
   display: flex;
   min-width: 320px;
   min-height: 100vh;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
 h1 {
@@ -36,11 +37,13 @@ h1 {
 
 #app {
   max-width: 1280px;
-  margin: 0 auto;
+  margin: auto;
   padding: 2rem;
   text-align: center;
   display: flex;
   align-items: center;
+  background: #242424;
+  height: fit-content;
 }
 
 .logo_img {
@@ -96,42 +99,9 @@ button:focus-visible {
   }
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: #f3f3f3;
-  padding: 0.7rem 1rem;
+.main-logo {
+  display: block;
   width: fit-content;
-}
-
-.logo img {
-  height: 35px;
-}
-
-.logo-txt {
-  padding-left: 7px;
-  display: flex;
-  flex-direction: column;
-  color: #f3f3f3;
-}
-
-.logo-txt h1,
-.logo-txt span {
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-  letter-spacing: 4px;
-  text-align: start;
-}
-
-.logo-txt h1 {
-  font-weight: bolder;
-  font-size: 1.1rem;
-  margin-top: 2px;
-}
-
-.logo-txt span {
-  font-weight: lighter;
-  font-size: 0.85rem;
+  margin: 0.5rem;
+  height: fit-content;
 }
