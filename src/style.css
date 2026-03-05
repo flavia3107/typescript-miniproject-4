@@ -5,7 +5,6 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,21 +12,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
   margin: 0;
-  display: flex;
-  min-width: 320px;
-  min-height: 100vh;
+  min-height: 99vh;
   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  background-attachment: fixed;
 }
 
 h1 {
@@ -36,7 +25,7 @@ h1 {
 }
 
 #app {
-  max-width: 1280px;
+  max-width: 30rem;
   margin: auto;
   padding: 2rem;
   text-align: center;
@@ -44,6 +33,16 @@ h1 {
   align-items: center;
   background: #242424;
   height: fit-content;
+  justify-content: center;
+  width: 70%;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 4rem);
 }
 
 .logo_img {
@@ -52,9 +51,11 @@ h1 {
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo_img:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo_img.vanilla:hover {
   filter: drop-shadow(0 0 2em #3178c6aa);
 }
@@ -78,9 +79,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
